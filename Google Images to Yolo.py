@@ -14,7 +14,7 @@ img_path="C:\\Users\\User\\Desktop"
 
 #Starting of the loop
 while True:
-    print("Menu for labels' folder")
+    print("Menu for google labels' folder: ")
     print("Current directory is -"+ path+"-")
 
 #Showing a list of folders and etc. to choose one of them
@@ -145,7 +145,6 @@ out_loc=out_loc+name_of_the_folder
 
 print("New folder has been created at "+out_loc+"\n")
 
-vehicle_type=int(input("0:Tank\n1:Helicopter: "))
 print("Files are being converted. Please do not turn off the program...")
 
 for files in os.listdir(path):
@@ -179,7 +178,9 @@ for files in os.listdir(path):
 
 
                     out_file = open(out_loc + "\\" + purified_files + ".txt" ,"a+")
-                    out_file.write(str(vehicle_type)+" "+str(center_x)+" "+str(centre_y)+" "+str(boundingBox_width)+" "+str(boundingBox_height)+"\n")
+                    #Change "0" for every diffrent type which is covered by a bounding box
+                    #If you have more than one label type in a photo, you can add a part to code to recognize the type in Google's labels and create a numerator for them.
+                    out_file.write(str(0)+" "+str(center_x)+" "+str(centre_y)+" "+str(boundingBox_width)+" "+str(boundingBox_height)+"\n")
 
 
 
