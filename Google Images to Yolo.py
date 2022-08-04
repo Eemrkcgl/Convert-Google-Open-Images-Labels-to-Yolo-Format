@@ -7,7 +7,7 @@ import numpy as np
 #Start Timer
 start=time.time()
 
-#At there I am assuming that the file's location is in Desktop
+#At there I am assuming that the file's location is on Desktop
 #If you want you can change the path of input from here
 path="C:\\Users\\User\\Desktop"
 img_path="C:\\Users\\User\\Desktop"
