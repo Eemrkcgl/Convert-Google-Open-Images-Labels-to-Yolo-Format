@@ -32,7 +32,7 @@ while True:
         #Updating the path with the entry that had been gotten from user.
         path = path + "\\" + os.listdir(path)[entry-1]
 
-        #Controlling if the file doesn't exit or not
+        #Controlling if the file doesn't exist or not
         if os.path.isfile(path) == True:
             continue
 
